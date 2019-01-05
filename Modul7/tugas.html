@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tugas</title>
+    <script>
+        function keputusan()
+        {
+        nilaia=parseInt(document.myform.a.value);
+        //document.myform.hasil.value=nilaia;
+        if (nilaia >= 0 & nilaia <=20) {
+            document.myform.hasil.value="E";
+        } else if (nilaia >=21 & nilaia <= 40) {
+            document.myform.hasil.value="D";
+        }else if (nilaia >=41 & nilaia <= 60) {
+            document.myform.hasil.value="C";
+        }else if (nilaia >=61 & nilaia <= 80) {
+            document.myform.hasil.value="B";
+        }else if (nilaia >=81 & nilaia <= 100) {
+            document.myform.hasil.value="A";
+        }else{
+            alert("Lebih dari 100");
+        }
+    }
+        
+    </script>
+</head>
+<body>
+    <form name='myform'>
+        <h3>Menghitung Nilai</h3>
+        Nilai  = <input type="text" name="a" size="5"><br> <br>
+        <input type="button" name="aksi" value="Cek Hasil" onclick="keputusan()"><br>
+        <br><br>
+        <b>Hasil = </b> <input type="text" name="hasil" size="5"><br>
+    </form>
+</body>
+</html>
